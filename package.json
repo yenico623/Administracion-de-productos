@@ -10,11 +10,11 @@
     "url": "git+https://github.com/yenico623/Administracion-de-productos.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yenifer Cortez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yenico623/Administracion-de-productos/issues"
   },
   "homepage": "https://github.com/yenico623/Administracion-de-productos#readme",
-  "description": ""
+  "description": "Aplicativo de tarjetas para productos con JS"
 }
