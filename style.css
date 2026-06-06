@@ -1,0 +1,58 @@
+:root{
+    --fuente-titulo: 'Playfair Display', serif;
+    --fuente-texto:  'Lato', sans-serif;
+}
+
+.card-article{
+    width: 300px;
+    background-color:#e9d5ff;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 0 12px 30px rgba(192,132,252,0.3);
+
+}
+
+.card-article:hover{
+    transform: translateY(-5px);
+}
+
+.img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.content{
+    padding: 15px;
+    text-align: center;
+}
+
+h2{
+    font-family: var(--fuente-titulo);
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: blueviolet;
+}
+p{
+    font-family: var(--fuente-texto);
+    color: #6d28d9;
+    padding: none;
+    background-color: white ;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+button{
+    background-color: #6d28d9;
+    color: white;
+    padding: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
