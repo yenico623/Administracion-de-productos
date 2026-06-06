@@ -1,3 +1,5 @@
+let productos = JSON.parse(localStorage.getItem("productos")) || []
+
 const btnFormulario = document.getElementById("btn-formulario");
 const formulario = document.getElementById("formulario");
 const btnAgregar = document.getElementById("btn-agregar");
@@ -38,8 +40,14 @@ btnAgregar.addEventListener("click", function(){
 
     if (nombre !== "" && url !=="" && descripcion !== ""){
         crearTrajeta(nombre, url, descripcion)
+        productos.push({nombre, url, descripcion})
+        localStorage.setItem("productos", JSON.stringify(productos))
         inputNombre.value =""
         inputUrl.value = ""
         inputDescripcion.value = ""
         }
+})
+
+productos.forEach(function(producto){
+    crearTrajeta(producto.nombre, producto.url, producto.descripcion)
 })
